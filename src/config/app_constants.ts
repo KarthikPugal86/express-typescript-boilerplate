@@ -1,3 +1,3 @@
-export enum AppConstants {
+export let AppConstants = {
     
 }

@@ -2,9 +2,9 @@ import { AppResponse } from 'src/interface/app_response';
 import { StatusCodes } from 'http-status-codes';
 import { UserModel, Status, Type } from '../models/user.model';
 import { hash, verify } from 'argon2';
-import { getJwtToken } from '../../../util/jwt_token';
 import _ from 'lodash';
-import { ErrorConstants } from '../../../config/error_constants';
+import { ErrorConstants } from 'src/config/error_constants';
+import { getJwtToken } from 'src/util/jwt_token';
 
 export class UserService {
     /**
